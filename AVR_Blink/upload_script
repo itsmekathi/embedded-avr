@@ -1,0 +1,1 @@
+avrdude -c usbasp -p m16 -P /dev/ttys0 -b 19200 -U flash:w:blink.hex 

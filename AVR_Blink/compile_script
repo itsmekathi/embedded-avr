@@ -1,0 +1,4 @@
+avr-gcc -g -Os -mmcu=atmega16 -c blink.c
+avr-gcc -g -mmcu=atmega16 -o blink.elf blink.o
+avr-objcopy -j .text -j .dat -O ihex blink.elf blink.hex
+avr-size --format=avr --mcu=atmega16.elf blink.elf
